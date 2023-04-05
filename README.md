@@ -17,6 +17,10 @@ If you want to be able to connect remotely to your PostgreSQL you have to change
 
 ```#listen_addresses = 'localhost'``` to ```listen_addresses = '*'```
 
+If you want to change the listening port which requires a restart of PostgreSQL service:
+```
+port = 12345
+```
 ## PostgreSQL Client Authentication Configuration File
 If you want to allow any valid user to connect remotely to your PostgreSQL Database server add this line :
 
