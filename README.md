@@ -14,3 +14,5 @@ The **-i** (simulate initial login) option runs the shell specified by the passw
 - **use the psql client program to change postgres user password**: ```psql -c "ALTER USER postgres WITH password 'myNewPassword'"```
 ## PostgreSQL configuration file
 ## PostgreSQL Client Authentication Configuration File
+If you want to be able to connect remotely to your PostgreSQL Database server add this line :
+```host    all             all             0.0.0.0/0            scram-sha-256```
