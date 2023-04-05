@@ -20,5 +20,7 @@ If you want to be able to connect remotely to your PostgreSQL you have to change
 ## PostgreSQL Client Authentication Configuration File
 If you want to allow any valid user to connect remotely to your PostgreSQL Database server add this line :
 
-```# TYPE  DATABASE        USER            ADDRESS                 METHOD
-host    all             all             0.0.0.0/0            scram-sha-256```
+```
+# TYPE  DATABASE        USER            ADDRESS                 METHOD
+host    all             all             0.0.0.0/0            scram-sha-256
+```
