@@ -13,6 +13,8 @@ The **-i** (simulate initial login) option runs the shell specified by the passw
 
 - **use the psql client program to change postgres user password**: ```psql -c "ALTER USER postgres WITH password 'myNewPassword'"```
 ## PostgreSQL configuration file
+File Path: /etc/postgresql/14/main/pg_hba.conf
+
 If you want to be able to connect remotely to your PostgreSQL you have to change the listening address :
 
 ```#listen_addresses = 'localhost'``` to ```listen_addresses = '*'```
@@ -22,6 +24,8 @@ If you want to change the listening port which requires a restart of PostgreSQL 
 port = 12345
 ```
 ## PostgreSQL Client Authentication Configuration File
+File Path: /etc/postgresql/14/main/postgresql.conf
+
 If you want to allow any valid user to connect remotely to your PostgreSQL Database server add this line :
 
 ```
