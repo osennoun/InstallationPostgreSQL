@@ -11,6 +11,6 @@ To change the password of the super user **postgres** do the following :
 
 The **-i** (simulate initial login) option runs the shell specified by the password database enry of the target user as a login shell.  This means that login-specific resource files such as .profile or .login will be read by the shell.
 
-- **use the psql client program to change postgres user password**: psql -c "ALTER USER postgres WITH password 'myNewPassword'"
+- **use the psql client program to change postgres user password**: ```psql -c "ALTER USER postgres WITH password 'myNewPassword'"```
 ## PostgreSQL configuration file
 ## PostgreSQL Client Authentication Configuration File
