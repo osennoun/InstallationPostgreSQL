@@ -7,7 +7,7 @@ sudo apt-get -y install postgresql-14
 ```
 ## Password modification
 To change the password of the super user **postgres** do the following :
-**login as postgres user** : sudo -i -u postgres
+- **login as postgres user** : ```sudo -i -u postgres```
 
 The **-i** (simulate initial login) option runs the shell specified by the password database enry of the target user as a login shell.  This means that login-specific resource files such as .profile or .login will be read by the shell.
 ## PostgreSQL configuration file
