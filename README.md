@@ -9,11 +9,11 @@ sudo apt-get -y install postgresql-14
 ```
 ## Password modification
 To change the password of postgreSQL **super user** do the following :
-- **login as postgres user** : ```sudo -i -u postgres```
+- **login as system postgres user** : ```sudo -i -u postgres```
 
 The **-i** (simulate initial login) option runs the shell specified by the password database enry of the target user as a login shell.  This means that login-specific resource files such as .profile or .login will be read by the shell.
 
-- **use the psql client program to change postgres user password**: ```psql -c "ALTER USER postgres WITH password 'myNewPassword'"```
+- **use the psql client program to change database postgres user password**: ```psql -c "ALTER USER postgres WITH password 'myNewPassword'"```
 ## PostgreSQL configuration file
 File Path: /etc/postgresql/14/main/pg_hba.conf
 
