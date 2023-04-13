@@ -34,3 +34,8 @@ If you want to allow any valid user to connect remotely to your PostgreSQL Datab
 # TYPE  DATABASE        USER            ADDRESS                 METHOD
 host    all             all             0.0.0.0/0            scram-sha-256
 ```
+# Administration
+## listing all active connections
+```sql
+SELECT pid, datid, datname, usesysid, usename , query, client_addr, client_port, query_start, backend_start, wait_event, xact_start, state FROM pg_catalog.pg_stat_activity
+```
