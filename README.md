@@ -57,4 +57,4 @@ pg_dump database_name  file_name.sql
 
 ```sql
 # to restore previously dumped database
-pg_restore -U postgres -d database_name -f file_name.sql
+psql -U postgres -d database_name -f file_name.sql
