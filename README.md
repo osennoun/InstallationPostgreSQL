@@ -42,3 +42,10 @@ host    all             all             0.0.0.0/0            scram-sha-256
 ```sql
 SELECT pid, datid, datname, usesysid, usename , query, client_addr, client_port, query_start, backend_start, wait_event, xact_start, state FROM pg_catalog.pg_stat_activity
 ```
+
+The pid column indicates session id. This pid value can then be passed to the pg_terminate_backend command to terminate the session. Here is an example:
+```sql
+- replace pid by your pii number
+SELECT pg_terminate_backend(pid);
+```
+## 
