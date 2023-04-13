@@ -48,4 +48,13 @@ The pid column indicates session id. This pid value can then be passed to the pg
 # replace pid by your pid number
 SELECT pg_terminate_backend(pid);
 ```
-## 
+## Dump and restore
+
+```sql
+# to dump a database into file
+pg_dump database_name  file_name.sql
+```
+
+```sql
+# to restore previously dumped database
+pg_restore -U postgres -d database_name -f file_name.sql
