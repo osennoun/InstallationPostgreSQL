@@ -45,7 +45,7 @@ SELECT pid, datid, datname, usesysid, usename , query, client_addr, client_port,
 
 The pid column indicates session id. This pid value can then be passed to the pg_terminate_backend command to terminate the session. Here is an example:
 ```sql
-# replace pid by your pii number
+# replace pid by your pid number
 SELECT pg_terminate_backend(pid);
 ```
 ## 
