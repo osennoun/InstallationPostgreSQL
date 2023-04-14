@@ -63,6 +63,7 @@ pg_dump database_name  file_name.sql
 psql -U postgres -d database_name -f file_name.sql
 
 ## Get active connections number
+
 ```sql
 select max_conn, used, res_for_super, max_conn-used-res_for_super res_for_normal 
 from   (select count(*) used from pg_stat_activity) t1,
