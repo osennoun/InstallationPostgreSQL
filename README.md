@@ -61,7 +61,7 @@ pg_dump database_name  file_name.sql
 ```sql
 # to restore previously dumped database
 psql -U postgres -d database_name -f file_name.sql
-
+```
 ## Get active connections number
 
 ```sql
