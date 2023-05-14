@@ -41,6 +41,16 @@ If you want to allow any valid user to connect remotely to your PostgreSQL Datab
 host    all             all             0.0.0.0/0            scram-sha-256
 ```
 # Administration
+## change the super administrator password
+- Connect to the local server using “psql”
+- Type the “\password” meta command of psql
+
+```sql
+postgres=# \password
+Enter new password:
+Enter it again:
+postgres=#
+```
 ## listing all active connections
 ```sql
 SELECT pid, datid, datname, usesysid, usename , query, client_addr, client_port, query_start, backend_start, wait_event, xact_start, state FROM pg_catalog.pg_stat_activity
